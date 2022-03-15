@@ -1,0 +1,829 @@
+/* RESPONSIVE */
+
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* GRID AREA */
+
+#gridAreas {
+    display: grid;
+    grid-template-areas: "cabeza" "seccion" "seccion" "pie";
+    grid-template-rows: 100px 2fr 2fr 100px;
+}
+
+
+/*Nombrar Areas  de GRID por AREAS*/
+
+header {
+    grid-area: cabeza;
+    background-color: blanchedalmond;
+}
+
+#Principal {
+    grid-area: inicio;
+    font-size: 16px;
+    background-image: url(https://images3.alphacoders.com/104/1044087.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+#Servicios {
+    grid-area: servicios;
+    text-align: center;
+}
+
+footer {
+    grid-area: pie;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        font-family: 'Patua One', cursive;
+        color: #000000;
+    }
+    .logo {
+        width: 80px;
+    }
+    ol a {
+        text-decoration: none;
+        color: #000000;
+    }
+    .introduccion {
+        background-color: blanchedalmond;
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Patua One', cursive;
+        font-weight: lighter;
+    }
+    .videoIntro-Flex {
+        display: flex;
+        justify-content: center;
+        margin-top: 170px;
+    }
+    .infoInicio-Flex {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(250, 250, 250);
+        font-weight: lighter;
+        border: 10px solid rgb(192, 190, 190);
+        padding: 30px;
+        margin-top: 20px;
+    }
+    h1 {
+        text-align: center;
+        background-color: blanchedalmond;
+        font-size: 15px;
+    }
+    h2 {
+        text-align: center;
+        background-color: blanchedalmond;
+        font-size: 20px;
+    }
+    h4 {
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+        font-size: 20px;
+    }
+    h6 {
+        text-align: center;
+        font-size: 20px;
+    }
+    /*FLEX */
+    .menu-Flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 387px;
+    }
+    .foot-Flex {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    /* NOVEDADES */
+    .tituloNovedades-Flex {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    .boomNovedades {
+        width: 300px;
+        margin-right: 430px;
+        margin-top: 20px;
+    }
+    .productosNovedades-Flex {
+        display: flex;
+        justify-content: space-around;
+        background-color: blanchedalmond;
+        margin-top: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .imagenesNovedades-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .precioNovedades-Flex {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: line-through;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .precioDescuentos-Flex {
+        display: flex;
+        justify-content: space-around;
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(190, 173, 147);
+    }
+    .cartasBatman {
+        border: 3px solid black;
+        margin-left: 13px;
+    }
+    .pokebola {
+        border: 3px solid black;
+        width: 300px;
+        height: 300px;
+    }
+    .mousepad {
+        border: 3px solid black;
+    }
+    .novedadesFoot-Flex {
+        display: flex;
+        flex-direction: column;
+        background-color: blanchedalmond;
+        margin-top: 90px;
+    }
+    /* TODOS LOS PRODUCTOS */
+    /*Productos - Flex*/
+    .productoTitulo-Flex {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .tituloProductos-Flex {
+        display: flex;
+        justify-content: space-around;
+        background-color: blanchedalmond;
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 26px;
+    }
+    .productos-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        margin-top: 10px;
+    }
+    .precioProductos-Flex {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .tituloProductos2-Flex {
+        display: flex;
+        justify-content: space-around;
+        background-color: blanchedalmond;
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 40px;
+    }
+    .productosDos-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        margin-top: 10px;
+    }
+    .precioProductosDos-Flex {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    /* IMAGENES - PRODUCTOS*/
+    .potter {
+        border: 3px solid #000000;
+        width: 300px;
+    }
+    .spidi {
+        border: 3px solid #000000;
+        width: 300px;
+    }
+    .remera {
+        border: 3px solid #000000;
+        width: 300px;
+    }
+    .taza {
+        border: 3px solid #000000;
+        width: 290px;
+        margin-left: 7px;
+    }
+    .pikachu {
+        border: 3px solid #000000;
+        margin-left: 9px;
+    }
+    .mouse {
+        border: 3px solid #000000;
+        width: 300px;
+    }
+    /* PREGUNTAS FRECUENTES*/
+    .preguntasFrecuentes-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* CONTACTO */
+    .info-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info2-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        margin-right: 20px;
+    }
+    .whatsapp {
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        margin-right: 20px;
+    }
+    .facebook {
+        width: 24px;
+    }
+    .instagram {
+        width: 24px;
+    }
+    .twitter {
+        width: 40px;
+    }
+}
+
+
+/* TABLET */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        font-family: 'Patua One', cursive;
+        color: #000000;
+    }
+    .logo {
+        width: 40px;
+    }
+    ol a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+    .introduccion {
+        background-color: blanchedalmond;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Patua One', cursive;
+        font-weight: lighter;
+    }
+    .videoIntro-Flex {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .infoInicio-Flex {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(250, 250, 250);
+        font-weight: lighter;
+        border: 10px solid rgb(192, 190, 190);
+        padding: 30px;
+        margin-top: 20px;
+    }
+    .loadImagen {
+        width: 464px;
+    }
+    h1 {
+        text-align: center;
+        background-color: blanchedalmond;
+        font-size: 13px;
+    }
+    h2 {
+        text-align: center;
+        background-color: blanchedalmond;
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+        font-size: 20px;
+    }
+    h6 {
+        text-align: center;
+        font-size: 20px;
+    }
+    /*FLEX */
+    .menu-Flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .foot-Flex {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    /* NOVEDADES */
+    .tituloNovedades-Flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        margin-left: 44px;
+    }
+    .boomNovedades {
+        width: 240px;
+        margin-left: 77px;
+        margin-top: 120px;
+    }
+    .productosNovedades-Flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: blanchedalmond;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .imagenesNovedades-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        padding-top: 100px;
+    }
+    .precioNovedades-Flex {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: line-through;
+        font-size: 18px;
+    }
+    .precioDescuentos-Flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(190, 173, 147);
+    }
+    .cartasBatman {
+        border: 3px solid black;
+        margin-right: 7px;
+        margin-left: 11px;
+        height: 150px;
+        width: 150px;
+    }
+    .pokebola {
+        border: 3px solid black;
+        height: 150px;
+        width: 150px;
+        margin-right: 12px;
+    }
+    .mousepad {
+        border: 3px solid black;
+        height: 150px;
+        width: 150px;
+        margin-right: 7px;
+    }
+    .novedadesFoot-Flex {
+        display: flex;
+        flex-direction: column;
+        background-color: blanchedalmond;
+        margin-top: 46px;
+    }
+    /* TODOS LOS PRODUCTOS */
+    /*Productos - Flex*/
+    .productoTitulo-Flex {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .tituloProductos-Flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: blanchedalmond;
+        margin-top: 30px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .productos-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        padding-top: 70px;
+    }
+    .precioProductos-Flex {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .tituloProductos2-Flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: blanchedalmond;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .productosDos-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        padding-top: 70px;
+    }
+    .precioProductosDos-Flex {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    /* IMAGENES - PRODUCTOS*/
+    .potter {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .spidi {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .remera {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .taza {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .pikachu {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .mouse {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    /* PREGUNTAS FRECUENTES*/
+    .preguntasFrecuentes-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* CONTACTO */
+    .info-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info2-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        margin-right: 20px;
+    }
+    .whatsapp {
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        margin-right: 20px;
+    }
+    .facebook {
+        width: 24px;
+    }
+    .instagram {
+        width: 24px;
+    }
+    .twitter {
+        width: 40px;
+    }
+}
+
+
+/* SMARTHPHONE */
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        font-family: 'Patua One', cursive;
+        color: #000000;
+    }
+    .logo {
+        width: 40px;
+    }
+    ol a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+    }
+    .introduccion {
+        background-color: blanchedalmond;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Patua One', cursive;
+        font-weight: lighter;
+    }
+    .videoIntro-Flex {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .infoInicio-Flex {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(250, 250, 250);
+        font-weight: lighter;
+        border: 10px solid rgb(192, 190, 190);
+        padding: 30px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .loadImagen {
+        width: 464px;
+    }
+    h1 {
+        text-align: center;
+        background-color: blanchedalmond;
+        font-size: 13px;
+    }
+    h2 {
+        text-align: center;
+        background-color: blanchedalmond;
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+        font-size: 20px;
+    }
+    h6 {
+        text-align: center;
+        font-size: 20px;
+    }
+    /*FLEX */
+    .menu-Flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .foot-Flex {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    /* NOVEDADES */
+    .tituloNovedades-Flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        margin-left: 44px;
+    }
+    .boomNovedades {
+        width: 240px;
+        margin-left: 77px;
+        margin-top: 50px;
+    }
+    .productosNovedades-Flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: blanchedalmond;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .imagenesNovedades-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        padding-top: 100px;
+    }
+    .precioNovedades-Flex {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: line-through;
+        font-size: 15px;
+    }
+    .precioDescuentos-Flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(190, 173, 147);
+    }
+    .cartasBatman {
+        border: 3px solid black;
+        margin-right: 7px;
+        margin-left: 11px;
+        height: 150px;
+        width: 150px;
+    }
+    .pokebola {
+        border: 3px solid black;
+        height: 150px;
+        width: 150px;
+        margin-right: 12px;
+    }
+    .mousepad {
+        border: 3px solid black;
+        height: 150px;
+        width: 150px;
+        margin-right: 7px;
+    }
+    .novedadesFoot-Flex {
+        display: flex;
+        flex-direction: column;
+        background-color: blanchedalmond;
+        margin-top: 46px;
+    }
+    /* TODOS LOS PRODUCTOS */
+    /*Productos - Flex*/
+    .productoTitulo-Flex {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .tituloProductos-Flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: blanchedalmond;
+        margin-top: 30px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .productos-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        padding-top: 70px;
+    }
+    .precioProductos-Flex {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .tituloProductos2-Flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: blanchedalmond;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .productosDos-Flex {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        padding-top: 70px;
+    }
+    .precioProductosDos-Flex {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    /* IMAGENES - PRODUCTOS*/
+    .potter {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .spidi {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .remera {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .taza {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .pikachu {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    .mouse {
+        border: 3px solid #000000;
+        width: 150px;
+        height: 150px;
+    }
+    /* PREGUNTAS FRECUENTES*/
+    .preguntasFrecuentes-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    /* CONTACTO */
+    .info-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info2-Flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        margin-right: 20px;
+    }
+    .whatsapp {
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        margin-right: 20px;
+    }
+    .facebook {
+        width: 24px;
+    }
+    .instagram {
+        width: 24px;
+    }
+    .twitter {
+        width: 40px;
+    }
+}
